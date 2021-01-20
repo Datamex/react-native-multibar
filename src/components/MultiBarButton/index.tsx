@@ -22,7 +22,7 @@ export const MultiBarButton: React.FC<Props> = ({
   React.useEffect(() => {
     const animation = Animated.spring(animated, {
       toValue: extrasVisible ? 1 : 0,
-      useNativeDriver: true
+      useNativeDriver: false
     });
 
     animation.start();
